@@ -22,6 +22,8 @@ contract QuadPassport is IQuadPassport, ERC1155Upgradeable, UUPSUpgradeable, Qua
     using SafeERC20Upgradeable for IERC20MetadataUpgradeable;
     event GovernanceUpdated(address _oldGovernance, address _governance);
 
+    constructor() initializer {}
+
     /// @dev initializer (constructor)
     /// @param _governanceContract address of the IQuadGovernance contract
     /// @param _uri URI of the Quadrata Passport
